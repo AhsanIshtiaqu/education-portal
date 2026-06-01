@@ -44,7 +44,7 @@
         }
 
         .brand-logo {
-            max-height: 85px; /* Adjust this height to fit your logo perfectly */
+            max-height: 85px;
             width: auto;
             object-fit: contain;
         }
@@ -208,13 +208,12 @@
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
 
 <div class="container">
     <div class="brand-header">
-        <img src="data:image/png;base64,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" alt="TechValley Logo" class="brand-logo">
+        <img src="data:image/png;base64,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" alt="TechValley Logo" class="brand-logo" alt="Institution Logo" class="brand-logo" onerror="this.style.display='none'">
         <h1>Education Portal</h1>
     </div>
 
@@ -269,7 +268,7 @@
                 <label>Personal Email Address</label>
                 <input type="email" id="emailAddr" placeholder="your@email.com">
             </div>
-            <button class="main-btn" style="margin-top: 0;" onclick="sendEmail()">Send Email</button>
+            <button class="main-btn" id="emailSubmitBtn" style="margin-top: 0;" onclick="sendEmail()">Send Email</button>
         </div>
 
         <div class="footer" id="search-info"></div>
@@ -279,27 +278,15 @@
 <script>
     // PASTE YOUR GOOGLE APPS SCRIPT WEB APP URL HERE
     const GAS_URL = "https://script.google.com/macros/s/AKfycbxzk7hPqIuWcrrDYzpsQWoQdL-ZrnaWyJILvEwU1GQVh26EG362O1gqHE0mAIwptyzV/exec"; 
-    
-    const EMAILJS_PUBLIC_KEY = "YOUR_EMAILJS_PUBLIC_KEY"; 
-    const EMAILJS_SERVICE_ID = "YOUR_EMAILJS_SERVICE_ID"; 
-    const EMAILJS_TEMPLATE_ID = "YOUR_EMAILJS_TEMPLATE_ID"; 
 
     let currentRole = 'teacher';
     let currentData = null;
     let passwordVisible = false;
 
-    if (EMAILJS_PUBLIC_KEY !== "YOUR_EMAILJS_PUBLIC_KEY") {
-        emailjs.init(EMAILJS_PUBLIC_KEY);
-    }
-
     function setRole(role) {
         currentRole = role;
         document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
-        
-        // Target execution fix for event reference context stability
-        if(event && event.target) {
-            event.target.classList.add('active');
-        }
+        if(event && event.target) event.target.classList.add('active');
 
         const primaryLabel = document.getElementById('primary-label');
         const verifyLabel = document.getElementById('verify-label');
@@ -317,7 +304,6 @@
             verifyLabel.innerText = "B-Form / CNIC Number";
             verifyInput.placeholder = "Enter B-Form Number";
         }
-        
         hideResults();
     }
 
@@ -347,7 +333,7 @@
         loader.style.display = 'block';
 
         try {
-            const url = `${GAS_URL}?type=${currentRole}&primaryId=${encodeURIComponent(primaryId)}&verifyField=${encodeURIComponent(verifyField)}`;
+            const url = `${GAS_URL}?action=lookup&type=${currentRole}&primaryId=${encodeURIComponent(primaryId)}&verifyField=${encodeURIComponent(verifyField)}`;
             const response = await fetch(url);
             const data = await response.json();
 
@@ -357,14 +343,13 @@
                 currentData = data;
                 displayResults(data);
             } else {
-                errorEl.innerText = data.error || "Server connection lost. Please try again.";
+                errorEl.innerText = data.error || "No record found.";
                 errorEl.style.display = 'block';
             }
         } catch (error) {
             loader.style.display = 'none';
-            errorEl.innerText = "Network layout error. Double-check your setup execution path.";
+            errorEl.innerText = "Network connection layout error.";
             errorEl.style.display = 'block';
-            console.error(error);
         }
     }
 
@@ -372,15 +357,13 @@
         document.getElementById('res-name').innerText = data.name;
         document.getElementById('res-school').innerText = data.school;
         document.getElementById('res-googleId').innerText = data.googleId;
-        
-        document.getElementById('search-info').innerText = `Your request has been tracked securely. Database updates logged: ${data.searchCount}`;
+        document.getElementById('search-info').innerText = `Search metrics tracked successfully. Count: ${data.searchCount}`;
         document.getElementById('result-card').style.display = 'block';
     }
 
     function togglePassword() {
         const passEl = document.getElementById('res-password');
         const btnEl = document.querySelector('.password-toggle');
-        
         if (passwordVisible) {
             passEl.innerText = '••••••••';
             btnEl.innerText = 'Show';
@@ -394,24 +377,16 @@
     function downloadPDF() {
         const { jsPDF } = window.jspdf;
         const doc = new jsPDF();
-
         doc.setFontSize(20);
         doc.setTextColor(0, 51, 102);
-        doc.text("Managed Identity Verification", 20, 30);
-
+        doc.text("Workspace Verification Credentials", 20, 30);
         doc.setFontSize(12);
         doc.setTextColor(0, 0, 0);
-        doc.text(`User Identity Name: ${currentData.name}`, 20, 50);
-        doc.text(`Educational Complex: ${currentData.school}`, 20, 60);
-        doc.text(`Assigned Google Domain ID: ${currentData.googleId}`, 20, 70);
-        doc.text(`System Workspace Password: ${currentData.password}`, 20, 80);
-
-        doc.setFontSize(10);
-        doc.setTextColor(100, 100, 100);
-        doc.text("Warning: Maintain credential ownership privacy.", 20, 100);
-        doc.text(`Generated on: ${new Date().toLocaleString()}`, 20, 110);
-
-        doc.save(`${currentData.name}_workspace_pass.pdf`);
+        doc.text(`Name: ${currentData.name}`, 20, 50);
+        doc.text(`School: ${currentData.school}`, 20, 60);
+        doc.text(`Google ID: ${currentData.googleId}`, 20, 70);
+        doc.text(`Password: ${currentData.password}`, 20, 80);
+        doc.save(`${currentData.name}_credentials.pdf`);
     }
 
     function showEmailSection() {
@@ -420,30 +395,36 @@
 
     async function sendEmail() {
         const email = document.getElementById('emailAddr').value.trim();
+        const submitBtn = document.getElementById('emailSubmitBtn');
+        
         if (!email) {
-            alert("A valid recipient address is required.");
+            alert("Please enter a valid personal email address.");
             return;
         }
 
-        if (EMAILJS_PUBLIC_KEY === "YOUR_EMAILJS_PUBLIC_KEY") {
-            alert("Email service configuration keys are currently missing.");
-            return;
-        }
+        const primaryId = document.getElementById('primaryId').value.trim();
+        const verifyField = document.getElementById('verifyField').value.trim();
+
+        submitBtn.innerText = "Sending Email...";
+        submitBtn.disabled = true;
 
         try {
-            const templateParams = {
-                to_email: email,
-                user_name: currentData.name,
-                google_id: currentData.googleId,
-                password: currentData.password,
-                school: currentData.school
-            };
+            const url = `${GAS_URL}?action=sendEmail&type=${currentRole}&primaryId=${encodeURIComponent(primaryId)}&verifyField=${encodeURIComponent(verifyField)}&email=${encodeURIComponent(email)}`;
+            const response = await fetch(url);
+            const data = await response.json();
 
-            await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams);
-            alert("Secure workspace summary transmission successful.");
+            if (data.success) {
+                alert("Success! Credentials have been sent directly from our system mailbox.");
+                document.getElementById('emailAddr').value = "";
+            } else {
+                alert("Failed to send: " + data.error);
+            }
         } catch (error) {
-            alert("Transmission engine failure. Try alternative document pathways.");
+            alert("System error tracking the email delivery path.");
             console.error(error);
+        } finally {
+            submitBtn.innerText = "Send Email";
+            submitBtn.disabled = false;
         }
     }
 </script>
