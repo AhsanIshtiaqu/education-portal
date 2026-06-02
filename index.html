@@ -199,6 +199,32 @@
             display: none;
             margin-top: 10px;
         }
+        /* DEVELOPER SIGNATURE FOOTER STYLING */
+        .dev-footer {
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px; /* Controls the spacing between the two lines */
+        }
+
+        .dev-footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .dev-footer a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+        
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
@@ -257,8 +283,10 @@
 
         <div class="footer" id="search-info"></div>
     </div>
-<div class="dev-footer">
-        Developed by <a href="https://www.linkedin.com/in/ahsan-ishtiaque/" target="_blank" rel="noopener noreferrer">Ahsan Ishtiaque</a>
+
+    <div class="dev-footer">
+        <span>Developed by</span>
+        <a href="https://www.linkedin.com/in/ahsan-ishtiaque/" target="_blank" rel="noopener noreferrer">Ahsan Ishtiaque</a>
     </div>
     
 </div>
